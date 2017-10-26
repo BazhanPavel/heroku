@@ -7,7 +7,7 @@ const PORT=4321,
       };
 express()
   .use(express.static('public'))
-  .get('/author', r=>r.res.set(CORS).send('Алан Тьюринг') )
+  .get('/author', r=>r.res.set(CORS).send('Бажан Павел') )
   .get('/', r=>r.res.sendFile('public/index.html'))
   .use(r=>r.res.status(404).end('Still not here, sorry!'))
   .use((e,r,res,n)=>res.status(500).end(`Error: ${e}`))
